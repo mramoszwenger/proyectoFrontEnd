@@ -1,0 +1,333 @@
+/**
+Estilos principales de Curriculum Vitae de Alto Impacto
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.subContenedor {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+}
+
+.columnaIzquierda {
+    border-right: solid 1px;
+    border-color: #DDDDDD;
+    padding-right: 1%;
+    margin-top: 25px;
+    background-color: #13C0E5;
+}
+
+h3 {
+    color: #555555;
+}
+
+h4 {
+    color: #777777;
+}
+
+p {
+    color: #999999;
+}
+
+/**
+* Estilo del Encabezado del Proyecto
+*/
+
+.encabezado {
+    background-color: #eeeeee;
+}
+
+.navMenu {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.navSeccion {
+   display: grid;
+   grid-template-columns: 1fr max-content;
+   justify-content: space-between;
+   align-items: center;
+   gap: 2em;
+}
+
+.navTitulo {
+    font-weight: 300;
+    font-size: 48px;
+    padding-left: 15%;
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.navProfesion {
+    color: #000000;
+    font-weight: 100;
+    font-size: 14px;
+    padding-top: 1%;
+    padding-left: 15%;
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.fotoPerfil {
+    max-width: 250px;
+    border-radius: 50%;
+    grid-column: 2/2;
+    grid-row: 1;
+}
+
+
+/**
+* Estilo del Cuerpo del Curriculum Vitae
+*/
+
+.datosContacto {
+    grid-column: 1/2;
+    grid-row: 1;
+    align-items: center;
+    padding: 0% 25% 0 0;
+    display: flex;
+}
+
+.seccionEducacion {
+    grid-column: 1/2;
+    grid-row: 2;
+    align-items: center;
+    padding: 0% 10% 0 10%;
+    margin-top: -5%;
+    display: flex;
+}
+
+.seccionCertificados {
+    grid-column: 1/2;
+    grid-row: 3;
+    align-items: center;
+    padding: 0 10% 0 10%;
+    margin-top: -5%;
+    display: flex;
+}
+
+.resumenProfesional {
+    margin-top: 5%;
+    margin-left: 5%;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+    display: flex;
+}
+
+.seccionExperiencias {
+    margin-left: 5%;
+    grid-column: 2;
+    grid-row: 2;
+    align-items: center;
+    display: flex;
+
+}
+
+.linksList {
+    margin-top: 0;
+    margin-left: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.linkItems {
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.datosExperiencia {
+    overflow: hidden;
+}
+
+.tituloLaboral {
+    margin: 40px 0 15px 0;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.empresaLaboral {
+    font-weight: 600;
+    display: inline;
+    overflow: hidden;
+}
+
+.periodoTrabajo {
+    font-weight: 400;
+    display: inline;
+    overflow: hidden;
+}
+
+.masInfo {
+    align-self: flex-end;
+    padding-left: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloEducacion {
+    margin: 15px 0 15px 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.establecimientoEducativo {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline;
+    color: #ffffff;
+}
+
+.periodoEstudio {
+    font-size: 14px;
+    font-weight: 400;
+    display: inline;
+    color: #ffffff;
+}
+
+.tituloCertificado {
+    margin: 15px 0 15px 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.entidadCertificadora {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+.tituloSecciones {
+    font-size: 32px;
+    border-bottom: solid 2px;
+    border-color: #13C0E5; 
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin-left: 5%;
+}
+
+/**
+* Estilo del Pie de Página
+*/
+
+.textoFooter {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    border-top: solid 1px;
+    border-color: #DDDDDD;
+}
+
+.linkFooter {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/**
+* Cuando el ancho sea inferior a 800px el elemento será un bloque. Diseño Responsivo
+*/
+
+@media all and (max-width: 800px) {
+
+    .contenedor {
+        display: block !important;  
+        width: auto !important;     
+    }
+
+    .navMenu { 
+        display: block !important;  
+        width: auto !important;
+        align-items: center;
+    }
+
+    .navSeccion {
+        width: auto;
+    }
+
+    .navTitulo {
+        text-align: center;
+        font-size: 28px;
+        padding: 0;
+    }
+
+    .navProfesion {
+        text-align: center;
+        font-size: 14px;
+        padding: 0;
+        margin-top: 2%;
+    }
+
+    .fotoCabecera {
+        text-align: center;
+    }
+
+    .encabezado {
+        background-color: #ffffff00;
+        border-bottom: solid 1px;
+        border-color: #DDDDDD;
+    }
+
+    .datosContacto {
+        text-align: center;
+    }
+
+    .seccionEducacion {
+        text-align: center;
+    }
+
+    .seccionCertificados {
+        text-align: center;
+    }
+
+    .columnaIzquierda {
+        border-right: none;
+    }
+
+    .resumenProfesional {
+        padding: 0;
+        margin: 0 5% 0 5%;
+        text-align: center;
+    }
+
+    .seccionExperiencias {
+        padding: 0;
+        margin: 0 5% 0 5%;
+        text-align: center;
+    }
+
+    .tituloSecciones {
+        text-align: center;
+    }
+
+    .columnaIzquierda {
+       border-radius: 15px;
+    }
+
+}
